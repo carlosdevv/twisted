@@ -18,5 +18,5 @@ POST http://localhost:3333/polls/9d7aadb7-d975-4337-a979-a6e39dd7bdd0/votes
 content-type: application/json
 
 {
-  "pollOptionId": "e9c2c7e1-436f-44e4-9962-6baefba948a6"
+  "pollOptionId": "434e92a5-821a-4ddf-943f-5750d683b29f"
 }
