@@ -1,9 +1,9 @@
 import { randomUUID } from "crypto";
 import { FastifyInstance } from "fastify";
 import z from "zod";
-import { prisma } from "../../lib/prisma";
-import { redis } from "../../lib/redis";
-import { voting } from "../../utils/voting-pub-sub";
+import { prisma } from "../../../lib/prisma";
+import { redis } from "../../../lib/redis";
+import { voting } from "../../../utils/voting-pub-sub";
 
 export async function voteOnPoll(app: FastifyInstance) {
   app.post("/polls/:pollId/votes", async (request, reply) => {

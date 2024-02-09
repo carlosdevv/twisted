@@ -1,9 +1,9 @@
 import cookie from "@fastify/cookie";
 import websocket from "@fastify/websocket";
 import fastify from "fastify";
-import { createPoll } from "./routes/create-poll";
-import { getPoll } from "./routes/get-poll";
-import { voteOnPoll } from "./routes/vote-on-poll";
+import { createPoll } from "./routes/createPoll/create-poll";
+import { getPoll } from "./routes/getPoll/get-poll";
+import { voteOnPoll } from "./routes/voteOnPoll/vote-on-poll";
 import { pollResults } from "./ws/poll-results";
 
 const app = fastify();
